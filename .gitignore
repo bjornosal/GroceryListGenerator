@@ -24,3 +24,9 @@
 hs_err_pid*
 
 
+.xml
+.idea/inspectionProfiles/
+.idea/libraries/
+src/main/resources/
+target/generated-sources/
+target/generated-test-sources/

@@ -1,8 +1,14 @@
-public abstract class Item {
+public class Item {
 
     private String itemName;
     private double itemPrice;
-    private String itemCategory;
+    private ItemCategory itemCategory;
+
+    public Item(String itemName, double itemPrice, ItemCategory itemCategory) {
+        this.itemName = itemName;
+        this.itemPrice = itemPrice;
+        this.itemCategory = itemCategory;
+    }
 
     public String getItemName() {
         return itemName;
@@ -20,11 +26,11 @@ public abstract class Item {
         this.itemPrice = itemPrice;
     }
 
-    public String getItemCategory() {
+    public ItemCategory getItemCategory() {
         return itemCategory;
     }
 
-    public void setItemCategory(String itemCategory) {
+    public void setItemCategory(ItemCategory itemCategory) {
         this.itemCategory = itemCategory;
     }
 }

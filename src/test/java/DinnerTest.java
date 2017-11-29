@@ -16,9 +16,8 @@ public class DinnerTest {
 
     @Test
     public void testAddOneIngredientToIngredientsList() {
-        DairyProduct milk = new DairyProduct("Milk", 25.5, ItemCategory.DAIRY);
-        milk.setItemName("Milk");
-        dinner.addItemToMealIngredient(milk);
+        Item potato = new Item("potato", 10, ItemCategory.FRUIT);
+        dinner.addItemToMealIngredient(potato);
         dinner.getTotalPriceOfMeal();
         assertThat(dinner.getMealIngredients().size(), is(1));
     }
