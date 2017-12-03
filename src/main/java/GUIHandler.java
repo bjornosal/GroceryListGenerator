@@ -13,7 +13,8 @@ import javafx.stage.Stage;
 public class GUIHandler<T> extends Application {
 
     private Label listLabel;
-    private TextField itemName;
+    private TextField itemField;
+    private ListView<Item> itemList;
 
     public void setUpGUI() {
         launch();
@@ -42,7 +43,8 @@ public class GUIHandler<T> extends Application {
 
     private void addGroceryListToLayout(VBox layout) {
         listLabel = new Label("Grocery list");
-        ListView<Item> itemList = new ListView<>();
+        itemList = new ListView<>();
+
         layout.getChildren().addAll(listLabel);
         layout.getChildren().add(itemList);
 
@@ -50,26 +52,31 @@ public class GUIHandler<T> extends Application {
         itemList.setMaxHeight(800);
         itemList.setMinWidth(150);
         itemList.setMaxWidth(500);
-        itemList.setPrefHeight(70);
+        itemList.setPrefHeight(500);
     }
 
     private void addItemFieldAndButtonToLayout(VBox layout) {
         Button button = new Button("Add item");
-        itemName = new TextField("What item to add?");
+        itemField = new TextField("What item to add?");
 
-        button.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-
-            }
-        });
+        button.setOnAction(event -> addItemToList());
+        layout.getChildren().add(itemField);
         layout.getChildren().add(button);
     }
 
-    // Add an item to the list. If it does not already exist in the json file
-    // then ask for more information
-    private void addItemToList(Item item) {
-
+    /*TODO
+    If it does not exist in json,
+    ask for item category and estimated price
+     */
+    private void addItemToList() {
+        Item itemFromField = new Item(itemField.getText(), 0, ItemCategory.FRUIT);
+        itemList.getItems().add(itemFromField);
     }
+
+    //TODO Add remove button
+    //TODO Add scene for dinners
+    //TODO Add functionality for choosing item category
+    //TODO Format window properly
+
 
 }

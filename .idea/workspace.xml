@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6576f5c5-8201-4bcf-9f5d-b6e28520c5a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/GUIHandler.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_all_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/App.java" afterPath="$PROJECT_DIR$/src/main/java/App.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/GUIHandler.java" afterPath="$PROJECT_DIR$/src/main/java/GUIHandler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -69,8 +65,8 @@
       <file leaf-file-name="GUIHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/GUIHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state relative-caret-position="550">
+              <caret line="80" column="4" lean-forward="false" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -222,11 +218,6 @@
             <path>
               <item name="GroceryListGenerator" type="b2602c69:ProjectViewProjectNode" />
               <item name="GroceryListGenerator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GroceryListGenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GroceryListGenerator" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GroceryListGenerator" type="b2602c69:ProjectViewProjectNode" />
@@ -478,7 +469,7 @@
       <workItem from="1511984219576" duration="1590000" />
       <workItem from="1511989325178" duration="3073000" />
       <workItem from="1512297071848" duration="853000" />
-      <workItem from="1512314417164" duration="1747000" />
+      <workItem from="1512314417164" duration="2562000" />
     </task>
     <task id="LOCAL-00001" summary="Added .ignore">
       <created>1511801815345</created>
@@ -494,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511991743670</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Started on JavaFX GUI setup">
+      <created>1512316179856</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1512316179857</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -521,7 +519,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11239000" />
+    <option name="totallyTimeSpent" value="12054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -565,7 +563,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added .ignore" />
     <MESSAGE value="Added some methods for the grocerylist" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some methods for the grocerylist" />
+    <MESSAGE value="Started on JavaFX GUI setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started on JavaFX GUI setup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -991,8 +990,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GUIHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state relative-caret-position="550">
+          <caret line="80" column="4" lean-forward="false" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
