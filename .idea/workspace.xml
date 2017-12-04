@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6576f5c5-8201-4bcf-9f5d-b6e28520c5a6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/InputHandler.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GroceryListGenerator.iml" afterPath="$PROJECT_DIR$/GroceryListGenerator.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Client.java" afterPath="$PROJECT_DIR$/src/main/java/Client.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/GUIHandler.java" afterPath="$PROJECT_DIR$/src/main/java/GUIHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Item.java" afterPath="$PROJECT_DIR$/src/main/java/Item.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/DinnerTest.java" afterPath="$PROJECT_DIR$/src/test/java/DinnerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -77,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GUIHandler.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GUIHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/GUIHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="64" column="37" lean-forward="true" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+            <state relative-caret-position="487">
+              <caret line="119" column="33" lean-forward="true" selection-start-line="119" selection-start-column="33" selection-end-line="119" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,7 +83,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -178,8 +172,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Client.java" />
         <option value="$PROJECT_DIR$/src/test/java/DinnerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Item.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GUIHandler.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/GUIHandler.java" />
       </list>
     </option>
   </component>
@@ -481,7 +475,7 @@
       <workItem from="1511989325178" duration="3073000" />
       <workItem from="1512297071848" duration="853000" />
       <workItem from="1512314417164" duration="2562000" />
-      <workItem from="1512400962452" duration="1978000" />
+      <workItem from="1512400962452" duration="2845000" />
     </task>
     <task id="LOCAL-00001" summary="Added .ignore">
       <created>1511801815345</created>
@@ -504,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512316179857</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added readme text. &#10;Removed InputHandler.&#10;Added functionality to GUI">
+      <created>1512403049508</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1512403049508</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -531,7 +532,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14032000" />
+    <option name="totallyTimeSpent" value="14899000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -576,7 +577,8 @@
     <MESSAGE value="Added .ignore" />
     <MESSAGE value="Added some methods for the grocerylist" />
     <MESSAGE value="Started on JavaFX GUI setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started on JavaFX GUI setup" />
+    <MESSAGE value="Added readme text. &#10;Removed InputHandler.&#10;Added functionality to GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added readme text. &#10;Removed InputHandler.&#10;Added functionality to GUI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1006,16 +1008,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUIHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="64" column="37" lean-forward="true" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1024,6 +1016,16 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUIHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="119" column="33" lean-forward="true" selection-start-line="119" selection-start-column="33" selection-end-line="119" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

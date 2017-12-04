@@ -1,6 +1,7 @@
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -29,12 +30,13 @@ public class GUIHandler extends Application {
         VBox windowCenter = new VBox();
 
         addGroceryListToLayout(windowCenter);
+        addDinnerListToLayout(windowCenter);
         addItemFieldAndButtonsToLayout(windowRight);
 
         windowLayout.setRight(windowRight);
         windowLayout.setCenter(windowCenter);
 
-        Scene scene = new Scene(windowLayout, 500, 350);
+        Scene scene = new Scene(windowLayout, 500, 750);
 
         mainWindow.setScene(scene);
         mainWindow.show();
@@ -42,16 +44,21 @@ public class GUIHandler extends Application {
 
     private void addGroceryListToLayout(VBox layout) {
         Label listLabel = new Label("Grocery list");
+
+        listLabel.setAlignment(Pos.CENTER);
         itemList = new ListView<>();
 
         layout.getChildren().add(listLabel);
         layout.getChildren().add(itemList);
 
         itemList.setMinHeight(100);
-        itemList.setMaxHeight(800);
+        itemList.setMaxHeight(500);
         itemList.setMinWidth(150);
         itemList.setMaxWidth(500);
-        itemList.setPrefHeight(500);
+        itemList.setPrefHeight(400);
+
+        listLabel.setMinWidth(itemList.getMinWidth());
+        listLabel.setMaxWidth(itemList.getMaxWidth());
     }
 
     private void addDinnerListToLayout(VBox layout) {
@@ -62,10 +69,14 @@ public class GUIHandler extends Application {
         layout.getChildren().add(dinnerList);
 
         dinnerList.setMinHeight(100);
-        dinnerList.setMaxHeight(800);
+        dinnerList.setMaxHeight(400);
         dinnerList.setMinWidth(150);
         dinnerList.setMaxWidth(500);
-        dinnerList.setPrefHeight(500);
+        dinnerList.setPrefHeight(300);
+
+        dinnerLabel.setAlignment(Pos.CENTER);
+        dinnerLabel.setMinWidth(dinnerList.getMinWidth());
+        dinnerLabel.setMaxWidth(dinnerList.getMaxWidth());
     }
 
     private void addItemFieldAndButtonsToLayout(VBox layout) {
@@ -99,6 +110,7 @@ public class GUIHandler extends Application {
         return false;
     }
 
+    //TODO needs to get random dinners from json file
     private void generateDinners() {
 
     }
