@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Wok med svinekjøtt",
+    "ingredients": [
+      {"itemName": "Nudler", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Wokgrønnsaker", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Svinekjøtt", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
+    ]
+  },
+  {
+    "name":"Pizza",
+    "ingredients": [
+      {"itemName": "Bogskinke", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Mel", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 2},
+      {"itemName": "Gjær", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Ost", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Creme Fraiché", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
+    ]
+  },
+  {
+    "name":"Pizza",
+    "ingredients": [
+      {"itemName": "Bogskinke", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Mel", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 2},
+      {"itemName": "Gjær", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Ost", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Creme Fraiché", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
+    ]
+  },
+  {
+    "name":"Pizza",
+    "ingredients": [
+      {"itemName": "Bogskinke", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Mel", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 2},
+      {"itemName": "Gjær", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Ost", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Creme Fraiché", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
+    ]
+  },
+  {
+    "name":"Pizza",
+    "ingredients": [
+      {"itemName": "Bogskinke", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Mel", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 2},
+      {"itemName": "Gjær", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Ost", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Creme Fraiché", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
+    ]
+  },
+  {
+    "name":"Pizza",
+    "ingredients": [
+      {"itemName": "Bogskinke", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Mel", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 2},
+      {"itemName": "Gjær", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Ost", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Creme Fraiché", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
+    ]
+  },
+  {
+    "name":"Pizza",
+    "ingredients": [
+      {"itemName": "Bogskinke", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Mel", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 2},
+      {"itemName": "Gjær", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Ost", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Creme Fraiché", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
+    ]
+  },
+  {
+    "name":"Pizza",
+    "ingredients": [
+      {"itemName": "Bogskinke", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Mel", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 2},
+      {"itemName": "Gjær", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Ost", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Creme Fraiché", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "name":"Melk",
+    "price":25,
+    "category":"DAIRY"
+  },
+  {
+    "name":"Creme Fraiche",
+    "price":"18",
+    "category":"DAIRY "
+  },
+  {
+    "name":"",
+    "price":"",
+    "category":""
+  }
+]
