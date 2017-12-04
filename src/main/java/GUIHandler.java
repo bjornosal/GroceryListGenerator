@@ -10,42 +10,41 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class GUIHandler<T> extends Application {
+public class GUIHandler extends Application {
 
-    private Label listLabel;
     private TextField itemField;
     private ListView<Item> itemList;
+    private ListView<Item> dinnerList;
 
     public void setUpGUI() {
         launch();
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
-        Stage window = primaryStage;
-        window.setTitle("Grocery list Generator");
+    public void start(Stage mainWindow) throws Exception {
+        mainWindow.setTitle("Grocery list Generator");
 
         BorderPane windowLayout = new BorderPane();
-        VBox windowLeft = new VBox();
+        VBox windowRight = new VBox();
         VBox windowCenter = new VBox();
 
         addGroceryListToLayout(windowCenter);
-        addItemFieldAndButtonToLayout(windowLeft);
+        addItemFieldAndButtonsToLayout(windowRight);
 
-        windowLayout.setRight(windowLeft);
+        windowLayout.setRight(windowRight);
         windowLayout.setCenter(windowCenter);
 
         Scene scene = new Scene(windowLayout, 500, 350);
 
-        window.setScene(scene);
-        window.show();
+        mainWindow.setScene(scene);
+        mainWindow.show();
     }
 
     private void addGroceryListToLayout(VBox layout) {
-        listLabel = new Label("Grocery list");
+        Label listLabel = new Label("Grocery list");
         itemList = new ListView<>();
 
-        layout.getChildren().addAll(listLabel);
+        layout.getChildren().add(listLabel);
         layout.getChildren().add(itemList);
 
         itemList.setMinHeight(100);
@@ -55,26 +54,56 @@ public class GUIHandler<T> extends Application {
         itemList.setPrefHeight(500);
     }
 
-    private void addItemFieldAndButtonToLayout(VBox layout) {
-        Button button = new Button("Add item");
+    private void addDinnerListToLayout(VBox layout) {
+        Label dinnerLabel = new Label("Dinners");
+        dinnerList = new ListView<>();
+
+        layout.getChildren().add(dinnerLabel);
+        layout.getChildren().add(dinnerList);
+
+        dinnerList.setMinHeight(100);
+        dinnerList.setMaxHeight(800);
+        dinnerList.setMinWidth(150);
+        dinnerList.setMaxWidth(500);
+        dinnerList.setPrefHeight(500);
+    }
+
+    private void addItemFieldAndButtonsToLayout(VBox layout) {
+        Button addButton = new Button("Add item");
+        Button deleteButton = new Button("Remove item");
         itemField = new TextField("What item to add?");
 
-        button.setOnAction(event -> addItemToList());
+        addButton.setOnAction(event -> addItemToList());
+        deleteButton.setOnAction(event -> removeItemFromList());
+
         layout.getChildren().add(itemField);
-        layout.getChildren().add(button);
+        layout.getChildren().add(addButton);
+        layout.getChildren().add(deleteButton);
     }
 
     /*TODO
     If it does not exist in json,
     ask for item category and estimated price
      */
-    private void addItemToList() {
-        Item itemFromField = new Item(itemField.getText(), 0, ItemCategory.FRUIT);
-        itemList.getItems().add(itemFromField);
+    private boolean addItemToList() {
+        Item itemFromField = new Item(itemField.getText(), 0, ItemCategory.FRUIT, 1);
+        return itemList.getItems().add(itemFromField);
     }
 
-    //TODO Add remove button
-    //TODO Add scene for dinners
+    private boolean removeItemFromList() {
+        int selectedIndex = itemList.getSelectionModel().getSelectedIndex();
+        if(selectedIndex != -1) {
+            itemList.getItems().remove(selectedIndex);
+        }
+
+        return false;
+    }
+
+    private void generateDinners() {
+
+    }
+
+    //TODO Add scene for dinners/Just add a new listview and label?
     //TODO Add functionality for choosing item category
     //TODO Format window properly
 
