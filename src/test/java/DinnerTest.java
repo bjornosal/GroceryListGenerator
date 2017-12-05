@@ -11,7 +11,7 @@ public class DinnerTest {
     @org.junit.Before
     public void setUp() throws Exception {
         ArrayList<Item> mealIngredients = new ArrayList<>();
-        dinner = new Dinner(mealIngredients);
+        dinner = new Dinner(mealIngredients, "testname");
     }
 
     @Test
