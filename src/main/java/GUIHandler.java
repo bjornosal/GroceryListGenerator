@@ -1,21 +1,20 @@
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+
+import java.lang.invoke.VolatileCallSite;
 
 public class GUIHandler extends Application {
 
     private TextField itemField;
     private ListView<Item> itemList;
     private ListView<Item> dinnerList;
+
 
     public void setUpGUI() {
         launch();
@@ -41,6 +40,7 @@ public class GUIHandler extends Application {
         mainWindow.setScene(scene);
         mainWindow.show();
     }
+
 
     private void addGroceryListToLayout(VBox layout) {
         Label listLabel = new Label("Grocery list");
@@ -79,10 +79,11 @@ public class GUIHandler extends Application {
         dinnerLabel.setMaxWidth(dinnerList.getMaxWidth());
     }
 
+
     private void addItemFieldAndButtonsToLayout(VBox layout) {
         Button addButton = new Button("Add item");
         Button deleteButton = new Button("Remove item");
-        itemField = new TextField("What item to add?");
+        itemField = new TextField("Item:");
 
         addButton.setOnAction(event -> addItemToList());
         deleteButton.setOnAction(event -> removeItemFromList());
@@ -92,10 +93,8 @@ public class GUIHandler extends Application {
         layout.getChildren().add(deleteButton);
     }
 
-    /*TODO
-    If it does not exist in json,
-    ask for item category and estimated price
-     */
+    //TODO If it does not exist in json, ask for item category and estimated price
+    //TODO if exists in list, update quantity. How?
     private boolean addItemToList() {
         Item itemFromField = new Item(itemField.getText(), 0, ItemCategory.FRUIT, 1);
         return itemList.getItems().add(itemFromField);
@@ -106,7 +105,6 @@ public class GUIHandler extends Application {
         if(selectedIndex != -1) {
             itemList.getItems().remove(selectedIndex);
         }
-
         return false;
     }
 
