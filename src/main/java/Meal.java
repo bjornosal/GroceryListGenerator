@@ -41,9 +41,7 @@ public abstract class Meal {
 
     @Override
     public String toString() {
-        return "Meal{" +
-                "mealIngredients=" + mealIngredients +
-                ", mealName='" + mealName + '\'' +
-                '}';
+        return "Mealname: " + mealName + "\n" +
+                "Ingredients: " + mealIngredients +"\n";
     }
 }

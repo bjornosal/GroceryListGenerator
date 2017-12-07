@@ -5,17 +5,11 @@ import org.json.JSONObject;
 import org.json.JSONTokener;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
 
 public class JSONHandler {
-    //TODO parse json file and create meals/dinners from the objects
-    //TODO create items from the arrays in the objects? If it does not exist, add it to the json file.
-    //parse information from file, generate dinners from the info
-    //use that information to fill a list and return a list of all dinners.
 
-    public ArrayList<Dinner> parseDinnersFile() throws FileNotFoundException {
+    public ArrayList<Dinner> getDinnersFromFile() throws FileNotFoundException {
 
         JSONArray jsonDinners = new JSONArray(new JSONTokener(new FileInputStream(new File("files/dinners.json"))));
 

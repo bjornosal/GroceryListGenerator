@@ -1,5 +1,4 @@
 import javafx.application.Application;
-import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -7,14 +6,16 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-import java.lang.invoke.VolatileCallSite;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class GUIHandler extends Application {
 
     private TextField itemField;
     private ListView<Item> itemList;
-    private ListView<Item> dinnerList;
-
+    private ListView<String> dinnerList;
+    private ArrayList<Dinner> dinners;
 
     public void setUpGUI() {
         launch();
@@ -31,7 +32,7 @@ public class GUIHandler extends Application {
         addGroceryListToLayout(windowCenter);
         addDinnerListToLayout(windowCenter);
         addItemFieldAndButtonsToLayout(windowRight);
-
+        addGenerateDinnersButtonToLayout(windowRight);
         windowLayout.setRight(windowRight);
         windowLayout.setCenter(windowCenter);
 
@@ -93,6 +94,19 @@ public class GUIHandler extends Application {
         layout.getChildren().add(deleteButton);
     }
 
+    private void addGenerateDinnersButtonToLayout(VBox layout) {
+        Button generateButton = new Button("Generate dinners");
+
+        generateButton.setOnAction(event -> {
+            try {
+                addDinnersToDinnerView();
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+        });
+        layout.getChildren().add(generateButton);
+    }
+
     //TODO If it does not exist in json, ask for item category and estimated price
     //TODO if exists in list, update quantity. How?
     private boolean addItemToList() {
@@ -108,11 +122,29 @@ public class GUIHandler extends Application {
         return false;
     }
 
-    //TODO needs to get random dinners from json file
-    private void generateDinners() {
+    private ArrayList<Dinner> generateDinners() throws FileNotFoundException {
+        JSONHandler jsonHandler = new JSONHandler();
+        ArrayList<Dinner> possibleDinners = jsonHandler.getDinnersFromFile();
 
+        ArrayList<Dinner> dinners = new ArrayList<>();
+        Collections.shuffle(possibleDinners);
+
+        for(int i = 0; i < 7; i++) {
+            dinners.add(possibleDinners.get(i));
+        }
+
+        return dinners;
     }
 
+    private void addDinnersToDinnerView() throws FileNotFoundException {
+        dinners = generateDinners();
+        generateDinners()
+                .forEach(this::addDinnerToDinnerView);
+    }
+
+    private void addDinnerToDinnerView(Dinner dinner){
+        dinnerList.getItems().add(dinner.getMealName());
+    }
     //TODO Add scene for dinners/Just add a new listview and label?
     //TODO Add functionality for choosing item category
     //TODO Format window properly
