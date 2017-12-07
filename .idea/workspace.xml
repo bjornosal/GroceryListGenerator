@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6576f5c5-8201-4bcf-9f5d-b6e28520c5a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/jsonArrayTest.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/files/jsonArrayTest.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GroceryListGenerator.iml" afterPath="$PROJECT_DIR$/GroceryListGenerator.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/App.java" afterPath="$PROJECT_DIR$/src/main/java/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Dinner.java" afterPath="$PROJECT_DIR$/src/main/java/Dinner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/GUIHandler.java" afterPath="$PROJECT_DIR$/src/main/java/GUIHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Item.java" afterPath="$PROJECT_DIR$/src/main/java/Item.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/files/dinners.json" afterPath="$PROJECT_DIR$/files/dinners.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/JSONHandler.java" afterPath="$PROJECT_DIR$/src/main/java/JSONHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Lunch.java" afterPath="$PROJECT_DIR$/src/main/java/Lunch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Meal.java" afterPath="$PROJECT_DIR$/src/main/java/Meal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/DinnerTest.java" afterPath="$PROJECT_DIR$/src/test/java/DinnerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JSONHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JSONHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/JSONHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="334">
-              <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,11 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dinners.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dinners.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/files/dinners.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="16" />
+            <state relative-caret-position="17">
+              <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -175,7 +167,6 @@
         <option value="$PROJECT_DIR$/src/main/java/dinners.json" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/files/items.json" />
-        <option value="$PROJECT_DIR$/files/dinners.json" />
         <option value="$PROJECT_DIR$/src/main/java/Lunch.java" />
         <option value="$PROJECT_DIR$/files/jsonArrayTest.json" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -186,6 +177,7 @@
         <option value="$PROJECT_DIR$/src/main/java/GUIHandler.java" />
         <option value="$PROJECT_DIR$/src/test/java/DinnerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/JSONHandler.java" />
+        <option value="$PROJECT_DIR$/files/dinners.json" />
       </list>
     </option>
   </component>
@@ -519,7 +511,7 @@
       <workItem from="1512400962452" duration="5116000" />
       <workItem from="1512483546958" duration="6888000" />
       <workItem from="1512640472182" duration="16000" />
-      <workItem from="1512657436787" duration="7646000" />
+      <workItem from="1512657436787" duration="8730000" />
     </task>
     <task id="LOCAL-00001" summary="Added .ignore">
       <created>1511801815345</created>
@@ -577,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512495246391</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Parsing through file now possible.">
+      <created>1512665111616</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1512665111616</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -607,7 +606,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31720000" />
+    <option name="totallyTimeSpent" value="32804000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -695,7 +694,8 @@
     <MESSAGE value="Added JSON testing files for items and dinners." />
     <MESSAGE value="Added json parsing of file. Will consider changing to gson for simplicity" />
     <MESSAGE value="Issues with json parsing of file. &#10;Add gson integration to simplify making it into objects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Issues with json parsing of file. &#10;Add gson integration to simplify making it into objects" />
+    <MESSAGE value="Parsing through file now possible." />
+    <option name="LAST_COMMIT_MESSAGE" value="Parsing through file now possible." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1119,21 +1119,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/dinners.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JSONHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
-          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/dinners.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>

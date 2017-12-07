@@ -15,16 +15,11 @@ public class JSONHandler {
     //parse information from file, generate dinners from the info
     //use that information to fill a list and return a list of all dinners.
 
-
     public ArrayList<Dinner> parseDinnersFile() throws FileNotFoundException {
 
-        //TODO Use Gson instead??
         JSONArray jsonDinners = new JSONArray(new JSONTokener(new FileInputStream(new File("files/dinners.json"))));
 
-        ArrayList<Dinner> dinners = parseDinnerArray(jsonDinners);
-
-        System.out.println(dinners);
-        return dinners;
+        return parseDinnerArray(jsonDinners);
     }
 
     private ArrayList<Dinner> parseDinnerArray(JSONArray jsonArray) {
@@ -37,7 +32,6 @@ public class JSONHandler {
             dinner.setMealIngredients(parseMealIngredients((JSONArray) object.get("ingredients")));
             list.add(dinner);
         }
-
         return list;
     }
 

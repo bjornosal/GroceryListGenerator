@@ -18,63 +18,55 @@
     ]
   },
   {
-    "name":"Pizza",
+    "name":"Laks med bakte poteter",
     "ingredients": [
-      {"itemName": "Bogskinke", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
-      {"itemName": "Mel", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 2},
-      {"itemName": "Gjær", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
-      {"itemName": "Ost", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
-      {"itemName": "Creme Fraiché", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
+      {"itemName": "Laks", "itemPrice": 80, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Saus", "itemPrice": 80, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Poteter", "itemPrice": 30, "itemCategory": "VEGETABLE", "itemQuantity": 2}
     ]
   },
   {
-    "name":"Pizza",
+    "name":"Pølse med potetstappe",
     "ingredients": [
-      {"itemName": "Bogskinke", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
-      {"itemName": "Mel", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 2},
-      {"itemName": "Gjær", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
-      {"itemName": "Ost", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
-      {"itemName": "Creme Fraiché", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
+      {"itemName": "Middagspølse", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Poteter", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 2},
+      {"itemName": "Ketchup", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Champignon", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Bacon", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
     ]
   },
   {
-    "name":"Pizza",
+    "name":"Enchiladas",
     "ingredients": [
-      {"itemName": "Bogskinke", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
-      {"itemName": "Mel", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 2},
-      {"itemName": "Gjær", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
-      {"itemName": "Ost", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
-      {"itemName": "Creme Fraiché", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
+      {"itemName": "Tacolefse", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Kjøttdeig", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Hermetiske Tomater", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Ost 400g", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Brune bønner", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
+      {"itemName": "Mais", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
     ]
   },
   {
-    "name":"Pizza",
+    "name":"Kyllingkjøttboller med pasta",
     "ingredients": [
-      {"itemName": "Bogskinke", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
-      {"itemName": "Mel", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 2},
-      {"itemName": "Gjær", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
-      {"itemName": "Ost", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
-      {"itemName": "Creme Fraiché", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
+      {"itemName": "Kyllingkjøttdeig", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Pasta", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Hvitløk", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Løk", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
     ]
   },
   {
-    "name":"Pizza",
+    "name":"Chili Con Carne",
     "ingredients": [
-      {"itemName": "Bogskinke", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
-      {"itemName": "Mel", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 2},
-      {"itemName": "Gjær", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
-      {"itemName": "Ost", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
-      {"itemName": "Creme Fraiché", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
-    ]
-  },
-  {
-    "name":"Pizza",
-    "ingredients": [
-      {"itemName": "Bogskinke", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
-      {"itemName": "Mel", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 2},
-      {"itemName": "Gjær", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
-      {"itemName": "Ost", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
-      {"itemName": "Creme Fraiché", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
+      {"itemName": "Kjøttdeig", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Løk", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 2},
+      {"itemName": "Hvitløk", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Gul Paprika", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1},
+      {"itemName": "Rød Paprika", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
+      {"itemName": "Hermetiske Tomater", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
+      {"itemName": "Brune Bønner", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
+      {"itemName": "Jasminris", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
+      {"itemName": "Creme Fraiche", "itemPrice": 20, "itemCategory": "VEGETABLE", "itemQuantity": 1}
     ]
   }
 ]
