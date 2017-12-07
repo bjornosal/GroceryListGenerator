@@ -2,14 +2,17 @@ public class Item {
 
     private String itemName;
     private double itemPrice;
-    private ItemCategory itemCategory;
+    private String itemCategory;
     private int quantity;
 
-    public Item(String itemName, double itemPrice, ItemCategory itemCategory, int quantity) {
+    public Item(String itemName, double itemPrice, String itemCategory, int quantity) {
         setItemName(itemName);
         setItemPrice(itemPrice);
         setItemCategory(itemCategory);
         setQuantity(quantity);
+    }
+
+    public Item() {
     }
 
     public String getItemName() {
@@ -28,11 +31,11 @@ public class Item {
         this.itemPrice = itemPrice;
     }
 
-    public ItemCategory getItemCategory() {
+    public String getItemCategory() {
         return itemCategory;
     }
 
-    public void setItemCategory(ItemCategory itemCategory) {
+    public void setItemCategory(String itemCategory) {
         this.itemCategory = itemCategory;
     }
 

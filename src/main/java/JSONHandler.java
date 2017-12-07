@@ -1,12 +1,13 @@
+
+import jdk.nashorn.internal.parser.JSONParser;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.List;
 
 public class JSONHandler {
     //TODO parse json file and create meals/dinners from the objects
@@ -14,35 +15,46 @@ public class JSONHandler {
     //parse information from file, generate dinners from the info
     //use that information to fill a list and return a list of all dinners.
 
+
     public ArrayList<Dinner> parseDinnersFile() throws FileNotFoundException {
-        ArrayList<Dinner> dinnersInFile = new ArrayList<>();
 
-//TODO Use Gson instead??
-
+        //TODO Use Gson instead??
         JSONArray jsonDinners = new JSONArray(new JSONTokener(new FileInputStream(new File("files/dinners.json"))));
 
-        for (int i = 0; i < jsonDinners.length(); i++) {
-            ArrayList<Item> ingredients = new ArrayList<>();
-            String dinnerName = jsonDinners.getJSONObject(i).getString("name");
-            System.out.println(dinnerName);
-            JSONArray dinnerIngredients = new JSONArray("ingredients");
+        ArrayList<Dinner> dinners = parseDinnerArray(jsonDinners);
 
-            for(int j = 0; j < dinnerIngredients.length(); j++) {
-
-                String itemName = dinnerIngredients.getJSONObject(j).getString("itemName");
-                Double itemPrice = dinnerIngredients.getJSONObject(j).getDouble("itemPrice");
-                String itemCategoryFromJson = dinnerIngredients.getJSONObject(j).getString("itemCategory");
-                int itemQuantity = dinnerIngredients.getJSONObject(j).getInt("itemQuantity");
-
-
-                ItemCategory itemCategory = ItemCategory.valueOf(itemCategoryFromJson);
-                ingredients.add(new Item(itemName, itemPrice, itemCategory, itemQuantity));
-            }
-
-            dinnersInFile.add(new Dinner(ingredients, dinnerName));
-        }
-        return dinnersInFile;
+        System.out.println(dinners);
+        return dinners;
     }
 
+    private ArrayList<Dinner> parseDinnerArray(JSONArray jsonArray) {
+        ArrayList<Dinner> list = new ArrayList<>();
+
+        for (Object item : jsonArray) {
+            JSONObject object = (JSONObject) item;
+            Dinner dinner = new Dinner();
+            dinner.setMealName(object.getString("name"));
+            dinner.setMealIngredients(parseMealIngredients((JSONArray) object.get("ingredients")));
+            list.add(dinner);
+        }
+
+        return list;
+    }
+
+    private ArrayList<Item> parseMealIngredients(JSONArray array) {
+
+        ArrayList<Item> list = new ArrayList<>();
+
+        for (Object item : array) {
+            JSONObject object = (JSONObject) item;
+            Item ingredient = new Item();
+            ingredient.setItemName(object.getString("itemName"));
+            ingredient.setItemPrice(object.getDouble("itemPrice"));
+            ingredient.setQuantity(object.getInt("itemQuantity"));
+            ingredient.setItemCategory(object.getString("itemCategory"));
+            list.add(ingredient);
+        }
+        return list;
+    }
 
 }

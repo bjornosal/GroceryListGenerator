@@ -16,7 +16,7 @@ public class DinnerTest {
 
     @Test
     public void testAddOneIngredientToIngredientsList() {
-        Item potato = new Item("potato", 10, ItemCategory.FRUIT, 1);
+        Item potato = new Item("potato", 10, "ItemCategory.FRUIT", 1);
         dinner.addItemToMealIngredient(potato);
         dinner.getTotalPriceOfMeal();
         assertThat(dinner.getMealIngredients().size(), is(1));

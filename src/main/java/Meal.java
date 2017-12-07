@@ -2,12 +2,15 @@ import java.util.ArrayList;
 
 public abstract class Meal {
 
-    private ArrayList<Item> mealIngredients;
     private String mealName;
+    private ArrayList<Item> mealIngredients;
 
-    public Meal(ArrayList<Item> mealIngredients, String mealName) {
+    public Meal(String mealName, ArrayList<Item> mealIngredients) {
         this.mealIngredients = mealIngredients;
         this.mealName = mealName;
+    }
+
+    public Meal() {
     }
 
     protected boolean addItemToMealIngredient(Item item) {
@@ -34,5 +37,13 @@ public abstract class Meal {
 
     public void setMealName(String mealName) {
         this.mealName = mealName;
+    }
+
+    @Override
+    public String toString() {
+        return "Meal{" +
+                "mealIngredients=" + mealIngredients +
+                ", mealName='" + mealName + '\'' +
+                '}';
     }
 }

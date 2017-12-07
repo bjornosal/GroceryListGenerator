@@ -3,6 +3,6 @@ import java.util.ArrayList;
 public class Lunch extends Meal {
 
     public Lunch(ArrayList<Item> mealIngredients, String mealName) {
-        super(mealIngredients, mealName);
+        super(mealName, mealIngredients);
     }
 }

@@ -96,7 +96,7 @@ public class GUIHandler extends Application {
     //TODO If it does not exist in json, ask for item category and estimated price
     //TODO if exists in list, update quantity. How?
     private boolean addItemToList() {
-        Item itemFromField = new Item(itemField.getText(), 0, ItemCategory.FRUIT, 1);
+        Item itemFromField = new Item(itemField.getText(), 0, "ItemCategory.FRUIT", 1);
         return itemList.getItems().add(itemFromField);
     }
 

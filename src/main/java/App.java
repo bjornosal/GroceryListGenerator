@@ -8,6 +8,7 @@ public class App {
 //        GUIHandler guiHandler = new GUIHandler();
 //        guiHandler.setUpGUI();
         JSONHandler jsonHandler = new JSONHandler();
+//        jsonHandler.getDinnersFromFile();
         System.out.println(jsonHandler.parseDinnersFile());
     }
 }
