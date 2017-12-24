@@ -15,7 +15,6 @@ public class GUIHandler extends Application {
     private TextField itemField;
     private ListView<Item> itemList;
     private ListView<String> dinnerList;
-    private ArrayList<Dinner> dinners;
 
     public void setUpGUI() {
         launch();
@@ -70,10 +69,10 @@ public class GUIHandler extends Application {
         layout.getChildren().add(dinnerList);
 
         dinnerList.setMinHeight(100);
-        dinnerList.setMaxHeight(400);
+        dinnerList.setMaxHeight(165);
         dinnerList.setMinWidth(150);
         dinnerList.setMaxWidth(500);
-        dinnerList.setPrefHeight(300);
+        dinnerList.setPrefHeight(165);
 
         dinnerLabel.setAlignment(Pos.CENTER);
         dinnerLabel.setMinWidth(dinnerList.getMinWidth());
@@ -99,6 +98,7 @@ public class GUIHandler extends Application {
 
         generateButton.setOnAction(event -> {
             try {
+                dinnerList.getItems().clear();
                 addDinnersToDinnerView();
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
@@ -137,9 +137,7 @@ public class GUIHandler extends Application {
     }
 
     private void addDinnersToDinnerView() throws FileNotFoundException {
-        dinners = generateDinners();
-        generateDinners()
-                .forEach(this::addDinnerToDinnerView);
+        generateDinners().forEach(this::addDinnerToDinnerView);
     }
 
     private void addDinnerToDinnerView(Dinner dinner){
