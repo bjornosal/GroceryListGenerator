@@ -9,12 +9,16 @@ import javafx.stage.Stage;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class GUIHandler extends Application {
 
     private TextField itemField;
     private ListView<Item> itemList;
     private ListView<String> dinnerList;
+
+    private ArrayList<Dinner> dinners;
 
     public void setUpGUI() {
         launch();
@@ -30,10 +34,12 @@ public class GUIHandler extends Application {
 
         addGroceryListToLayout(windowCenter);
         addDinnerListToLayout(windowCenter);
+        windowLayout.setCenter(windowCenter);
+
         addItemFieldAndButtonsToLayout(windowRight);
         addGenerateDinnersButtonToLayout(windowRight);
+        addAddIngredientsFromDinnersButtonToLayout(windowRight);
         windowLayout.setRight(windowRight);
-        windowLayout.setCenter(windowCenter);
 
         Scene scene = new Scene(windowLayout, 500, 750);
 
@@ -107,11 +113,23 @@ public class GUIHandler extends Application {
         layout.getChildren().add(generateButton);
     }
 
+    private void addAddIngredientsFromDinnersButtonToLayout(VBox layout) {
+        Button ingredientsButton = new Button("Add all ingredients");
+        ingredientsButton.setOnAction(event -> addDinnerIngredientsToItemList());
+        layout.getChildren().add(ingredientsButton);
+    }
+
+    //TODO Add updateQuantity method?
+
     //TODO If it does not exist in json, ask for item category and estimated price
     //TODO if exists in list, update quantity. How?
     private boolean addItemToList() {
         Item itemFromField = new Item(itemField.getText(), 0, "ItemCategory.FRUIT", 1);
         return itemList.getItems().add(itemFromField);
+    }
+
+    private boolean addItemToList(Item item) {
+        return itemList.getItems().add(item);
     }
 
     private boolean removeItemFromList() {
@@ -137,15 +155,25 @@ public class GUIHandler extends Application {
     }
 
     private void addDinnersToDinnerView() throws FileNotFoundException {
-        generateDinners().forEach(this::addDinnerToDinnerView);
+        dinners = generateDinners();
+        dinners.forEach(this::addDinnerToDinnerView);
     }
 
     private void addDinnerToDinnerView(Dinner dinner){
         dinnerList.getItems().add(dinner.getMealName());
     }
-    //TODO Add scene for dinners/Just add a new listview and label?
-    //TODO Add functionality for choosing item category
-    //TODO Format window properly
 
+    private List<ArrayList<Item>> getIngredientsFromDinners() {
+        return dinners.stream()
+                .map(Meal::getMealIngredients)
+                .collect(Collectors.toList());
+    }
 
+    private void addDinnerIngredientsToItemList(){
+        getIngredientsFromDinners()
+                .stream()
+                .flatMap(List::stream)
+                .collect(Collectors.toList())
+                .forEach(this::addItemToList);
+    }
 }
